@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+form .input {
+    all: unset;
+    background-color: #fff;
+    padding: 10px;
+    width: calc(100% - 120px);
+    font-size: 22px;
+    border-radius: 10px;
+    border: none;
+}
+
+form .add {
+    width: fit-content;
+    background-color: rgb(255, 82, 82);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    word-spacing: -2px;
+    padding: 0 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form .add:hover {
+    background-color: rgb(255, 30, 30);
+}
+
+form .add:active {
+    background-color: rgb(255, 82, 82);
+}
+
+.tasks {
+    padding: 20px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+article {
+    /* border: 2px solid; */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+article button {
+    all: unset;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: fit-content;
+    background-color: rgb(255, 82, 82);
+}
+
+article button:hover {
+    background-color: rgb(255, 40, 40);
+}

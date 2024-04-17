@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #f44336
+}
+body {
+    margin: 0;
+    background-color: #EEE;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 50px;
+    background-color: #FFF;
+}
+.guess-game {
+    text-align: center;
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+}
+.guess-game .all-words-cvr {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.96);
+}
+.guess-game .all-words-cvr .all-words {
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #FFF;
+    width: 50vw;
+    padding: 30px 60px;
+    border-radius: 20px;
+    user-select: none;
+}
+.guess-game .all-words-cvr .all-words p {
+    color: var(--primary-color);
+    margin: 25px 0;
+}
+.guess-game .game-area {
+    text-align: center;
+}
+.guess-game .game-area .inputs div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guess-game .game-area .inputs .disabled-inputs {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.guess-game .game-area .inputs div span {
+    font-size: 30px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.guess-game .game-area .inputs input {
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    caret-color: var(--primary-color);
+    background-color: #FFF;
+    border: none;
+    border-bottom: 3px solid #333;
+}
+.guess-game .game-area .inputs input:focus {
+    outline-style: none;
+    outline: 1px solid #444;
+}
+.guess-game .game-area .inputs .in-place {
+    background-color: #f89e13;
+    border: #f89e13;
+    color: #FFF;
+}
+.guess-game .game-area .inputs .not-in-place {
+    background-color: #18ba89;
+    border: #18ba89;
+    color: #FFF;
+}
+.guess-game .game-area .inputs .wrong {
+    background-color: #27303f;
+    border: #27303f;
+    color: #FFF;
+}
+.guess-game .game-area .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 30px auto;
+    gap: 10px;
+}
+.guess-game .game-area .control .check {
+    border: none;
+    font-size: 25px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+}
+.guess-game .game-area .control .hint {
+    border: none;
+    font-size: 25px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: #009688;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+}
+.guess-game .game-area .control button:disabled {
+    background-color: #000;
+    opacity: 0.4;
+    cursor: no-drop;
+}
+.guess-game .game-area .message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.guess-game .game-area .message span {
+    font-weight: bold;
+    display: block;
+    font-size: 50px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.guess-game .game-area .message p {
+    margin-top: 15px;
+}
+.guess-game .key-colors .key-color{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+.guess-game .key-colors .key-color .key {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.guess-game .key-colors .key-color .in-place {
+    background-color: #f89e13;
+}
+.guess-game .key-colors .key-color .not-in-place {
+    background-color: #18ba89;
+}
+.guess-game .key-colors .key-color .wrong {
+    background-color: #27303f;
+}
+.guess-game .key-colors .key-color .key-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    background-color: #333;
+    color: #EEE;
+}
