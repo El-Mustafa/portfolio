@@ -3197,6 +3197,10 @@ td:last-child {
     transition-property: color, background-color;
 }
 
+.s-header__menu-links a:hover {
+    color: var(--color-1);
+}
+
 .s-header__menu-links .current a {
     color: white;
 }
@@ -3948,6 +3952,10 @@ td:last-child {
 
 .s-about__list a {
     color: var(--color-text);
+}
+
+.s-about__list a:hover {
+    color: var(--color-1);
 }
 
 .s-about__list li {
